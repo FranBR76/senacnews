@@ -1,0 +1,509 @@
+
+body {
+    margin: 0 auto;
+    background-color: #0e1620;
+    width: 1200px;    /* tamanho do body, assim, a pagina ficara com uma borda e por conta da Margin estar auto, ficara centralizado */
+    color: white;
+    font-family: poppins;
+    }
+
+header {
+    position: relative;
+   /*  background-color: aliceblue;*/
+    background-color:  #609CE1 ;
+}
+
+#logo {
+    width: 15%;
+}
+
+
+
+.container {
+    margin: 0 auto;
+    background-color: #236AB9 ;
+    margin-top: -22px; /* margem a cima */
+    margin-bottom: -22px;   /* Margem a baixo  */
+   
+    
+    
+}
+
+
+.destaque {
+    margin-top: 10px;
+    
+}
+.busca,
+.menu-noticias {
+    background-color: #609CE1;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 10px;
+    width: 230px;
+    float: left;
+    transition: all 2.5s ease;
+}
+.menu-noticias {
+    clear: left;
+    margin-top: 10px;
+    transition: all 2.5s ease;
+}
+.busca input[type=search] {
+    width: 150px;
+}
+.busca h2,
+.busca form,
+.menu-noticias h2 {
+    margin: 10px;
+}
+
+
+.botao {
+    background-color: #236AB9;
+    border-radius: 10px;
+    text-align: center;
+    border: solid 2px white;
+    padding: 10px;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    margin-left: 110px;
+}
+
+.botao a {
+    text-align: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+}
+
+.busca button {
+    background-image: url(../img/lupa.png);
+    background-repeat: no-repeat;
+    border: none;
+    width: 20px;
+    height: 20px;
+    text-indent: -99999px;
+    background-color: transparent;
+}
+.menu-noticias li {
+    background-color: #236AB9;
+    margin-bottom: 3px;
+    border-radius: 15px;
+    padding: 5px 10px;
+    list-style: none;
+    text-align: center;
+    margin-left: -30px;
+    margin-right: 10px;
+    border: solid 2px whitesmoke;
+    transition: all 2.5s ease;
+}
+
+.menu-noticias a{
+    text-decoration: none;
+    color: azure;
+    transition: all 2.5s ease;
+    
+}
+
+.menu-noticias a:hover{
+    text-decoration: underline;
+    transition: all 2.5s ease;
+    color: #CCC;
+
+}
+.menu-noticias li:hover {
+    background-color: #609CE1;
+    transition: all 2.5s ease;
+}
+/* 
+.menu-noticias li ul {
+    display: none;
+    transition: maxheight 5s all 2.5s ease;
+}
+
+.menu-noticias li:hover ul{
+    display: block;
+    font-size: smaller;
+    transition: all 2.5s ease;
+} */
+
+
+
+.menu-noticias li ul {
+    max-height: 0; /* Inicialmente escondido */
+    opacity: 0; /* Invisível */
+    overflow: hidden; /* Esconde o conteúdo */
+    transition: max-height 1.5s ease, opacity 1.5s ease; /* Animação suave */
+    transition-delay: 0.1s;
+}
+
+.menu-noticias li:hover ul {
+    max-height: 500px; /* Ajuste esse valor dependendo do conteúdo */
+    opacity: 1; /* Torna visível */
+}
+
+.destaque {
+    margin-top: 20px;
+}
+
+.destaque img {
+    width: 80%;
+    /* margin-top: 10px; */
+    border-radius: 10px;
+}
+
+h1 {
+
+    padding: 15px;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-left: 15px;
+    margin-top: 30px;
+}
+p {
+    padding: 0 45px;
+    text-indent: 15px;
+}
+
+figure{
+    padding: 15px;
+    margin: 30px;
+    background-color: #0E1620;
+    border: 2px solid #CCC;
+    text-align: center;
+    
+}
+
+
+figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.list-leitura {
+    background-color: #091D34;
+    margin-inline: 100px;
+    margin-right: 900px;
+    border: 2px solid #ccc;
+    
+    border-radius: 25px;
+    padding: 15px;
+    text-align: left;
+}
+
+#predio {
+    border-radius: 10px;
+    width: 750px;
+}
+
+.predio {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    border-radius: 10px;
+}
+.bike {
+    margin: 0 15px 10px 40px;
+    float: right;
+    
+    width: 200px;
+    border-radius: 10px;
+}
+.bike img {
+    width: 100%;
+}
+#ben10 {
+    filter: drop-shadow(12px 10px 30px green);
+    justify-content: center;
+}
+
+#bike {
+    filter: drop-shadow(12px 0 30px white);
+}
+
+/* section {
+    background-color: aquamarine;
+    border-radius: 15px;
+    
+} */
+
+
+.menu_opcoes {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.menu_opcoes ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;  /* é o espaçamento interno */
+    font-size: 20px;
+    overflow: hidden;    /* Não deixa a borda ultrapassar do tamanho da fonte */
+    background-color: #609CE1;
+    border-radius: 5px;
+}
+.menu_opcoes ul li{
+    display: inline;    /* Passa a lista para um do lado do outro ao invez de ser uma em cima da outra */
+    margin-left: 0px;
+    border-right: 5px solid transparent ;    /* colocar um "|" ao lado do fim de cada item da lista */
+    list-style-type: square;
+    color: white
+
+
+}
+.menu_opcoes li:last-child {
+    border-right: none;
+}
+
+.menu_opcoes a {
+    color: azure;
+    text-align: center;
+    text-decoration: none;    /* tirar o underline do link */
+    padding: 14px 16px;
+    /* font-family: Monocraft; */
+    font-family: Monocraft;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px black;
+    
+}
+
+.menu_opcoes li a:hover { /* Hover é quando se passa o mouse por cima */
+    color: #0e151b;
+    background-color: white;
+    border-radius: 40%; /* boder-radius é para deixar a borda mais arredondada */
+    text-shadow: none;
+    transition: all 0.5s ease;  /* transição para realizar animação mais suavemente */
+    font-size: x-large;
+    /* font-size: 10px; */
+}
+
+
+
+footer {
+    background-color:  #091D34;   
+    clear: both;   /* Prof. disse q é para deixar sempre abaixo */
+
+}
+
+#logofooter {
+    width: 30%; 
+    
+}
+footer .config {
+    position: relative;
+}
+.social {
+    position: absolute;
+    /* position absolute porque sempre fica fixo la em baixo */
+    right: 0;
+    top: 12px;
+}
+
+.social li {
+    float: left;
+    margin-left: 25px;
+    list-style: none;
+}
+
+.social a {
+    height: 32px;
+    width: 32px;
+    display: inline-block;
+    text-indent: -9999px;
+}
+
+.social a[href*="facebook.com"] {
+    background-image: url(../img/facebook.png);
+}
+
+.social a[href*="instagram.com"] {
+    background-image: url(../img/instagram.png);
+}
+.social a[href*="linkedin.com"] {
+    background-image: url(../img/linkedin.png);
+}
+
+footer h4 {
+    color: white;
+    text-align: center;
+}
+
+.social ul {
+    margin-left: -10px;
+}
+
+
+.todo {
+    width: 100%;
+    /* height: 500px; */
+    /* background-color: red; */
+    background-color: transparent;
+    max-width: 100%;
+    
+    position: relative;
+    margin-top: 92px;
+}
+.principal {
+    max-width: 70%;
+    position: relative;
+    width: 70%;
+    
+    /* height: 500px; */
+    /* background-color: green; */
+    background-color: #236AB9;
+}
+.principal ul {
+    list-style-type: none;
+}
+.principal img {
+    width: 50%;
+}
+.principal a {
+    text-decoration: none;
+    color: white;
+}
+.principal figure {
+    padding: 15px;
+    
+    margin: 30px;
+    background-color: #333;
+    border: 1px solid #ccc;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    
+    
+}
+
+.figtexto {
+    position: absolute;
+    text-align: justify;
+    padding-left: 440px;
+    /* width: 200px; */
+    padding-right: 80px;
+    margin-top: -300px;
+
+}
+
+.principal figcaption {
+    width: 348px;
+    text-align: center;
+    
+}
+
+.feeds {
+    float: right;
+    max-width: 30%;
+    width: 30%;
+    /* height: 500px; */
+    /* background-color: yellow; */
+    background-color: transparent;
+    border: solid 2px  white;
+}
+
+
+
+
+/* parte slideshow
+ */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 720px;
+  padding-top: 20px;
+  position: relative;
+  margin: auto;
+  
+
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -10px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: -216px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  margin-left: 117px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 28px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot:first-child {
+    margin-left: 230px;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
